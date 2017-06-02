@@ -1,6 +1,8 @@
 package com.helgegudmundsen.whatthehack.placefinder.net;
 
 import static org.junit.Assert.*;
+
+import com.helgegudmundsen.whatthehack.placefinder.util.Config;
 import org.junit.*;
 /**
  * Class for spike testing calls to webservice
@@ -9,7 +11,14 @@ public class CallWebServiceTest {
 
     @Test
     public void testCallWebService() {
-        String json = WebService.executeService("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=38.766111,%20-9.094942&radius=500&type=bar&key=AIzaSyBTOEpuX7ISgVz6d6jjJky139FN4NXs6UE");
+        StringBuilder queryString = new StringBuilder();
+        queryString.append(Config.getProperty("places-url"));
+        queryString.append("location=" + Config.getProperty("location"));
+        queryString.append("&radius=" + Config.getProperty("radius"));
+        queryString.append("&type=" + Config.getProperty("type"));
+        queryString.append("&key=" + Config.getProperty("api-key"));
+
+        String json = WebService.executeService(queryString.toString());
         assertFalse("JSON should not be empty", json.equals(""));
     }
 }
