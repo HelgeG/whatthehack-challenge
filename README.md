@@ -14,3 +14,6 @@ they want to do (have a drink, get takeaway, go to a disco).
 The app then does a location based search for the given activity, grabs the 
 3 best results and presents these in a list with directions for how to get there.
 
+## Implementation details
+
+Since I am an old fart, I will go against the grain and code the solution in Java.
