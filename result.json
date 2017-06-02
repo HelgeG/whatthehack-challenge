@@ -1,0 +1,184 @@
+{
+  "html_attributions" : [],
+  "results" : [
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 38.77179539999999,
+          "lng" : -9.0923555
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 38.77314438029149,
+            "lng" : -9.091006519708499
+          },
+          "southwest" : {
+            "lat" : 38.7704464197085,
+            "lng" : -9.093704480291503
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "9946353229d48d14581a2368d419341468866cdd",
+      "name" : "Irish & Co.",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 2160,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/101200762197074321162/photos\"\u003eTiago Lopes\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRYAAAAPHRtmm3Ri8K5YmL6qZwrfZVRh_lT5nG1UBA94YTk3pEIcBu_wQA9ihBKBaYhUhpVPToZacxH2cr1Rand4d2hNUVHlr-pcxbPFWLuS0SvNDcX_Bz0eVqfVA97FH3zmC1EEhDzheLXkiiffsmJS-5eFe7lGhRi8kq_VyCbGW5ErGYu5lvJdHRplg",
+          "width" : 3840
+        }
+      ],
+      "place_id" : "ChIJsUqdTY4xGQ0RXo9HiUW74Qk",
+      "rating" : 4.1,
+      "reference" : "CmRRAAAAavnjILQsfFwCFlkNdxKjrNlT5CjGqbR8YZo7Ig1KsAzydbKlx4N_sH-tJBHqcGwyLbftzezZZAgDPkia0NqnpNPq54dgXT_uilgBF5f2FSfcAA6CIg47_wXzpEFd5kW2EhCUSXshPS_PjAqZkilmgcs_GhRdsNv9Xl2bwbuvtOveCzOtq6v6UQ",
+      "scope" : "GOOGLE",
+      "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
+      "vicinity" : "61, Rua Pimenta 57"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 38.7719742,
+          "lng" : -9.0977958
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 38.7733204802915,
+            "lng" : -9.096389269708498
+          },
+          "southwest" : {
+            "lat" : 38.7706225197085,
+            "lng" : -9.099087230291502
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "350cbcf71e266b07557567a81bf61c33074d2a61",
+      "name" : "Me & You",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 5312,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/100781177369810091925/photos\"\u003eSílvia Filipe\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRYAAAAkNZQYuFsh-ywJcmNppkAO3bB_Hrj4OX0iWBuv8Js5POVhjvICAux-c4aRyiJnXJ4k0DcqGZrMcJAjik4AkzlGVQBkVoHYB_xXOlR042VJSKxW4FEHKqwTY4LQxuLROX_EhAliZfCgVGJLVvYHlbEgC8dGhSYeKnHzJtomY4HLAHCTVgnCiAAPw",
+          "width" : 2988
+        }
+      ],
+      "place_id" : "ChIJMbJYG4kxGQ0R-1jL2EEVqyU",
+      "rating" : 3.7,
+      "reference" : "CmRRAAAA54J43eQahkmKAHyxYtnIeIl0y0qur1hVAcndnr_T1jiM0xAgm9i-FQMrqRqY3iDEGn3ns4f9yDClc3gpXMuyvOMeU1aDjxDYlWhH1BZN36R6oH2ukImzkqJI2bFgNiDnEhC70jWVoES3FcWdiL7uSaUFGhTF6vHF3RLk1x8913G0OH8BwuTMGQ",
+      "scope" : "GOOGLE",
+      "types" : [
+        "restaurant",
+        "cafe",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity" : "Avenida Dom João II Lote 1.17.03, Lisboa"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 38.755849,
+          "lng" : -9.093938999999999
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 38.7571979802915,
+            "lng" : -9.092590019708496
+          },
+          "southwest" : {
+            "lat" : 38.7545000197085,
+            "lng" : -9.0952879802915
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id" : "0c4989f8778eb6e0bbca6092ef3fd64c5d43ec44",
+      "name" : "1UP Gaming Lounge",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 1084,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/112450068810257014679/photos\"\u003e1UP Gaming Lounge\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRYAAAABcx4virRUVyYfLBqBGKrwV9RBdt5YEAtV6obityNIEB3Nkwk5g8f_f2xShYNJZTdceveceL7rnY5hefl-vwbFEoTl7Mi4o9-N-jAKAr0SoiVIzK4G24YG6PSwZQAtWhAEhBEkxGrQ7VqrDfrsZpuE9myGhRRAqOSIGH5HaCg5gVrXzecAhP1pg",
+          "width" : 2902
+        }
+      ],
+      "place_id" : "ChIJ8WDD3EotGQ0R1pwzG_Y1h8k",
+      "rating" : 4.6,
+      "reference" : "CmRSAAAAVr7wspb-1ALJPBPHxP-wyufUCrUT7c8gDk5tkq8oP3nPfVQmlTWpatVanZ7MEakQ1oXtY3nhrR-99YRKW2T0UPQmHIOsA1NY1eZk7dvUgcqgIAO5T8PUW7TT_Q_HozfbEhBYBOPkGlxeVsQNES6H00ClGhQ-KYn8X2Kwkk9wLiJVQszvJrT49A",
+      "scope" : "GOOGLE",
+      "types" : [ "bar", "store", "point_of_interest", "establishment" ],
+      "vicinity" : "Passeio de Neptuno, 5, Marina Parque das Nações, Lisboa"
+    },
+    {
+      "geometry" : {
+        "location" : {
+          "lat" : 38.7711642,
+          "lng" : -9.0924915
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 38.7725131802915,
+            "lng" : -9.091142519708498
+          },
+          "southwest" : {
+            "lat" : 38.76981521970851,
+            "lng" : -9.093840480291503
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "210af1741c77d80cf4cfbb1ca932dc58fecf4000",
+      "name" : "Peter's Café Sport",
+      "opening_hours" : {
+        "open_now" : true,
+        "weekday_text" : []
+      },
+      "photos" : [
+        {
+          "height" : 3264,
+          "html_attributions" : [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/108723573414742932642/photos\"\u003eMaria Capela\u003c/a\u003e"
+          ],
+          "photo_reference" : "CmRYAAAAWrTYnG8Liqf1C6cIUaCmxPbdHRH5vVS1aafZvo12mXSCeoIpSkcZOmx9rGFbwDs0eOmpuYoJ2hiDa9dEYAmIcO8zh6IuIWu_fc9EsaIwqUrfdDPTDNGqom-gpya8CIwjEhDmpNPo2miMALkihTtiLDd6GhSdW83UHMU-wYjIrqE88k4HpJoJHw",
+          "width" : 2448
+        }
+      ],
+      "place_id" : "ChIJzV_kQY4xGQ0RqnMlQ3gnPRs",
+      "rating" : 3.7,
+      "reference" : "CmRRAAAAo43oEOSA0T9CXEy5ehLfzfc4HC5YnCyh2_MT6vut85ZP9Kn6bJ5_zao1huaAFqs-lVTS1DdJTiaJeSJEwjh3kPYRfID13svhEnPqh2Pl_uOq4b54z5D5FusbRgfKzwz3EhARxhFgaWFch6M24DSGTVEmGhSzntER0WN6WzP6nK3tdFzfqgGDdw",
+      "scope" : "GOOGLE",
+      "types" : [
+        "restaurant",
+        "cafe",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity" : "Rua da Pimenta 39/41 - Parque das Nações, Lisboa"
+    }
+  ],
+  "status" : "OK"
+}
