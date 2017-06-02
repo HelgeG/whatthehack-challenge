@@ -25,8 +25,17 @@ public class JsonParseTest {
         JsonNode node = mapper.readTree(json);
 
         ArrayNode resultsNode = (ArrayNode) node.get("results");
-        assertTrue("We should have four results here" ,resultsNode.size() == 4);
+        assertTrue("We should have four results here", resultsNode.size() == 4);
+        for (JsonNode result : resultsNode) {
+            System.out.println(result.path("name").asText());
+            System.out.println(result.path("rating").asText());
+            System.out.println(result.path("opening_hours").path("open_now").asText());
+            System.out.println(result.path("geometry").path("location").path("lat").asText());
+            System.out.println(result.path("geometry").path("location").path("lng").asText());
+            System.out.println(result.path("vicinity").asText());
+            System.out.println();
 
+
+        }
     }
-
 }
