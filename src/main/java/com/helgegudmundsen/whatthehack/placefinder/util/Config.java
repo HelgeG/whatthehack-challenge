@@ -29,7 +29,7 @@ public class Config {
         }
     }
 
-    static String getProperty(String property) {
+    public static String getProperty(String property) {
         return prop.getProperty(property);
     }
 
