@@ -17,3 +17,6 @@ The app then does a location based search for the given activity, grabs the
 ## Implementation details
 
 Since I am an old fart, I will go against the grain and code the solution in Java.
+
+The search will be done against Google Places, so I registered for an API key.
+
