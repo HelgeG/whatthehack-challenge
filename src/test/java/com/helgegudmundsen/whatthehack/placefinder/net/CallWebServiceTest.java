@@ -1,16 +1,11 @@
-package com.helgegudmundsen.whatthehack.placefinder;
+package com.helgegudmundsen.whatthehack.placefinder.net;
 
-import com.helgegudmundsen.whatthehack.placefinder.net.WebService;
 import static org.junit.Assert.*;
 import org.junit.*;
 /**
  * Class for spike testing calls to webservice
  */
 public class CallWebServiceTest {
-    @Test
-    public void test() {
-//        fail("Not yet implemented");
-    }
 
     @Test
     public void testCallWebService() {
