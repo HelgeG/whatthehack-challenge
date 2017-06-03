@@ -1,8 +1,8 @@
-package com.helgegudmundsen.whatthehack.placefinder.net;
+package com.helgegudmundsen.whatthehack.barfinder.net;
 
 import static org.junit.Assert.*;
 
-import com.helgegudmundsen.whatthehack.placefinder.util.Config;
+import com.helgegudmundsen.whatthehack.barfinder.util.Config;
 import org.junit.*;
 /**
  * Class for spike testing calls to webservice

@@ -1,10 +1,9 @@
-package com.helgegudmundsen.whatthehack.placefinder.net;
+package com.helgegudmundsen.whatthehack.barfinder.net;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.helgegudmundsen.whatthehack.placefinder.util.Config;
-import spark.Request;
+import com.helgegudmundsen.whatthehack.barfinder.util.Config;
 
 import java.io.IOException;
 import java.util.ArrayList;

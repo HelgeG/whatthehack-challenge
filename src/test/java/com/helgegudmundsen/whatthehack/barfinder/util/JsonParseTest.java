@@ -1,12 +1,9 @@
-package com.helgegudmundsen.whatthehack.placefinder.util;
+package com.helgegudmundsen.whatthehack.barfinder.util;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;

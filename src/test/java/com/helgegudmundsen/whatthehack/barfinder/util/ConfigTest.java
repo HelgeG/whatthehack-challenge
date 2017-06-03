@@ -1,4 +1,4 @@
-package com.helgegudmundsen.whatthehack.placefinder.util;
+package com.helgegudmundsen.whatthehack.barfinder.util;
 
 import static org.junit.Assert.*;
 import org.junit.*;

@@ -1,4 +1,4 @@
-package com.helgegudmundsen.whatthehack.placefinder.net;
+package com.helgegudmundsen.whatthehack.barfinder.net;
 
 import java.io.BufferedReader;
 import java.io.IOException;

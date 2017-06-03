@@ -1,13 +1,9 @@
-package com.helgegudmundsen.whatthehack.placefinder.core;
+package com.helgegudmundsen.whatthehack.barfinder.core;
 
-import com.helgegudmundsen.whatthehack.placefinder.net.PickEstablishment;
-import com.helgegudmundsen.whatthehack.placefinder.util.Config;
+import com.helgegudmundsen.whatthehack.barfinder.net.PickEstablishment;
+import com.helgegudmundsen.whatthehack.barfinder.util.Config;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
-import spark.Request;
-import spark.Response;
-import spark.Route;
-import spark.Spark;
 
 import java.io.StringWriter;
 import java.util.HashMap;

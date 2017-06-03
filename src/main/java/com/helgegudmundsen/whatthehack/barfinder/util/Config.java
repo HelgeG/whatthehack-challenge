@@ -1,4 +1,4 @@
-package com.helgegudmundsen.whatthehack.placefinder.util;
+package com.helgegudmundsen.whatthehack.barfinder.util;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,7 +13,7 @@ public class Config {
     private static InputStream input = null;
     static {
         try {
-            input = new FileInputStream("properties/placefinder.properties");
+            input = new FileInputStream("properties/barfinder.properties");
             // load a properties file
             prop.load(input);
         } catch (IOException ex) {
