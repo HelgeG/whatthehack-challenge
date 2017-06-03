@@ -8,5 +8,8 @@
 </head>
 <body>
 <h1>Looking for a nice place to have a ${type}</h1>
+<form action="/find" method="post">
+    <input type="submit" value="Find beer!">
+</form>
 </body>
 </html>
