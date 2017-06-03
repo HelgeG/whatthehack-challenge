@@ -20,7 +20,17 @@ how to get there.
 
 Since I am an old fart, I will go against the current fads and code the solution in Java.
 
-Current location is estimated using the HTML Geolocation API.
+Current location is estimated using the HTML Geolocation API using JavaScript in the browser:
+
+```
+            navigator.geolocation.getCurrentPosition(function(position) {
+                document.getElementById('lat').value = position.coords.latitude;
+                document.getElementById('long').value = position.coords.longitude;
+            };
+```
+
+The latitude and longitude is extracted and put in hidden fields in a form and passed
+on to the server code that calls the Google Places API to search for bars in the area.
 
 The search for bars will be done against Google Places and Google Maps APIs, so I registered for API keys for both services.
 
