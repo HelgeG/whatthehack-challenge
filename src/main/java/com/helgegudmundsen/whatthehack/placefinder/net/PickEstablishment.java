@@ -67,6 +67,7 @@ public class PickEstablishment {
                 resultMap.put("name", result.path("name").asText());
                 resultMap.put("rating", result.path("rating").asText());
                 resultMap.put("address", result.path("vicinity").asText());
+                resultMap.put("id", result.path("place_id").asText());
                 resultMap.put("location", result.path("geometry").path("location").path("lat").asText()
                     + "," + result.path("geometry").path("location").path("lng").asText());
                 openEstablishments.add(resultMap);
@@ -87,10 +88,6 @@ public class PickEstablishment {
 
     private String getLocation() {
         return Config.getProperty("location");
-    }
-
-    public static void showRequest(Request request) {
-        System.out.println(request.body());
     }
 
 }
