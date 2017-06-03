@@ -28,9 +28,9 @@ public class BarFinder {
 
             get("/beer", (request, response) -> {
                 final String location = request.queryParams("lat") + "," + request.queryParams("long");
-                Template resultTemplate;
                 StringWriter writer = new StringWriter();
                 Map<String, Object> map = new PickEstablishment().searchGooglePlaces(location);
+                Template resultTemplate;
                 if (map == null) {
                     resultTemplate = config.getTemplate("no_result.ftl");
                 } else {
@@ -43,12 +43,12 @@ public class BarFinder {
             get("/directions", (request, response) -> {
                 final String id = request.queryParams("id");
                 request.queryParams("long");
-                Template directionTemplate;
                 StringWriter writer = new StringWriter();
                 Map<String, Object> map = new HashMap<>();
                 String mapsApiKey = Config.getProperty("mapsapikey");
                 map.put("mapsapikey", mapsApiKey);
                 map.put("id", id);
+                Template directionTemplate;
                 directionTemplate = config.getTemplate("directions.ftl");
                 directionTemplate.process(map, writer);
                 return writer;
