@@ -7,6 +7,6 @@
     <script src="script.js"></script>
 </head>
 <body>
-<h1>The higherst rated open bar in the vicinity is ${name}</h1>
+<h1>The highest rated open bar in the vicinity is ${name}</h1>
 </body>
 </html>
