@@ -80,7 +80,7 @@ public class PickEstablishment {
         queryString.append("location=").append(getLocation());
         queryString.append("&radius=").append(Config.getProperty("radius"));
         queryString.append("&type=").append(Config.getProperty("type"));
-        queryString.append("&key=").append(Config.getProperty("api-key"));
+        queryString.append("&key=").append(Config.getProperty("places-api-key"));
         return queryString;
     }
 
