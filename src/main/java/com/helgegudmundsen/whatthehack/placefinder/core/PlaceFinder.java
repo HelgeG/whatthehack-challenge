@@ -33,8 +33,6 @@ public class PlaceFinder {
                 } else {
                     lookForTemplate = config.getTemplate("result.ftl");
                 }
-//                Map<String, Object> map = new HashMap<>();
-//                map.put("type", "Beer");
                 lookForTemplate.process(map, writer);
                 return writer;
             });
