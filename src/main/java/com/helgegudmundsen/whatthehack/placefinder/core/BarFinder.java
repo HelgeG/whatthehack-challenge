@@ -44,6 +44,20 @@ public class BarFinder {
                 return writer;
             });
 
+            get("/directions", (request, response) -> {
+                final String id = request.queryParams("id");
+                request.queryParams("long");
+                Template directionTemplate;
+                StringWriter writer = new StringWriter();
+                Map<String, Object> map = new HashMap<>();
+                String mapsApiKey = Config.getProperty("mapsapikey");
+                map.put("mapsapikey", mapsApiKey);
+                map.put("id", id);
+                directionTemplate = config.getTemplate("directions.ftl");
+                directionTemplate.process(map, writer);
+                return writer;
+            });
+
         } catch (Exception e) {
             halt(500);
             e.printStackTrace();
