@@ -20,18 +20,13 @@ import static org.junit.Assert.assertTrue;
 public class PickEstablishment {
     public Map<String, Object> searchGooglePlaces(String location)
             throws IOException {
-        StringBuilder queryString = getQueryString(location);
-        String jsonResult = WebService.executeService(queryString.toString());
-        return parseResult(jsonResult);
+        return parseResult(WebService.executeService(getQueryString(location).toString()));
     }
 
     private Map<String,Object> parseResult(String jsonResult)
             throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        JsonNode node = mapper.readTree(jsonResult);
-        ArrayNode resultsNode = (ArrayNode) node.get("results");
+        ArrayNode resultsNode = (ArrayNode) new ObjectMapper().readTree(jsonResult).get("results");
         List<Map<String, Object>> openEstablishments = getListOfOpenEstablishments(resultsNode);
-
         return getHighestRatedEstablishment(openEstablishments);
     }
 
@@ -88,5 +83,4 @@ public class PickEstablishment {
     private String getLocation() {
         return Config.getProperty("location");
     }
-
 }
