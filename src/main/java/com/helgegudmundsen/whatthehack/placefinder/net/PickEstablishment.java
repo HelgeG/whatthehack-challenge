@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.helgegudmundsen.whatthehack.placefinder.util.Config;
+import spark.Request;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,9 +19,9 @@ import static org.junit.Assert.assertTrue;
  * Created by helge on 03/06/2017.
  */
 public class PickEstablishment {
-    public Map<String, Object> searchGooglePlaces()
+    public Map<String, Object> searchGooglePlaces(String location)
             throws IOException {
-        StringBuilder queryString = getQueryString();
+        StringBuilder queryString = getQueryString(location);
         String jsonResult = WebService.executeService(queryString.toString());
         return parseResult(jsonResult);
     }
@@ -74,17 +75,22 @@ public class PickEstablishment {
         return openEstablishments;
     }
 
-    private StringBuilder getQueryString() {
+    private StringBuilder getQueryString(String location) {
         StringBuilder queryString = new StringBuilder();
-        queryString.append(Config.getProperty("places-url"));
-        queryString.append("location=").append(getLocation());
+        queryString.append(Config.getProperty("placesurl"));
+        queryString.append("location=").append(location.equals("") ? getLocation() : location);
         queryString.append("&radius=").append(Config.getProperty("radius"));
         queryString.append("&type=").append(Config.getProperty("type"));
-        queryString.append("&key=").append(Config.getProperty("places-api-key"));
+        queryString.append("&key=").append(Config.getProperty("placesapikey"));
         return queryString;
     }
 
     private String getLocation() {
         return Config.getProperty("location");
     }
+
+    public static void showRequest(Request request) {
+        System.out.println(request.body());
+    }
+
 }
