@@ -103,8 +103,8 @@
             <div class="top">
                 <i class="fa fa-times btn-times"></i>
                 <img src="https://d13yacurqjgara.cloudfront.net/users/220725/screenshots/2364712/funnybeer_1x.jpg" alt="" class="img-responsive" />
-                <h2 class="text-center">I want beer</h2>
-                <p class="text-center top--text">Take me to a good bar close to here</p>
+                <h2 class="text-center">I want beer!!!</h2>
+                <p class="text-center top--text">Take me to a good bar close to here.</p>
             </div>
         </div>
 
