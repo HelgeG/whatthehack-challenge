@@ -1,5 +1,6 @@
 package com.helgegudmundsen.whatthehack.placefinder.core;
 
+import com.helgegudmundsen.whatthehack.placefinder.net.FindPlaces;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 
@@ -24,10 +25,17 @@ public class PlaceFinder {
                 return writer;
             });
             post("/find", (request, response) -> {
-                Template lookForTemplate = config.getTemplate("results.ftl");
+                Template lookForTemplate;
                 StringWriter writer = new StringWriter();
-                Map<String, Object> map = new HashMap<>();
-                map.put("type", "Beer");
+                //FindPlaces fp = new FindPlaces();
+                Map<String, Object> map = new FindPlaces().searchGooglePlaces();
+                if (map == null) {
+                    lookForTemplate = config.getTemplate("no_result.ftl");
+                } else {
+                    lookForTemplate = config.getTemplate("result.ftl");
+                }
+//                Map<String, Object> map = new HashMap<>();
+//                map.put("type", "Beer");
                 lookForTemplate.process(map, writer);
                 return writer;
             });
