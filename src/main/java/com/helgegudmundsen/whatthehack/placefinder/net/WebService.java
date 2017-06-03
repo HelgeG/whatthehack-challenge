@@ -18,17 +18,14 @@ public class WebService {
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
-
             if (conn.getResponseCode() != 200) {
                 throw new RuntimeException("Failed : HTTP error code : "
                         + conn.getResponseCode());
             }
-
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     (conn.getInputStream())));
             json = br.lines().collect(Collectors.joining());
             conn.disconnect();
-
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
