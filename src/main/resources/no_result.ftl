@@ -95,10 +95,8 @@
     </style>
 </head>
 <body>
-
 <div class="container">
     <div class="row">
-
         <div class="top--container">
             <div class="top">
                 <i class="fa fa-times btn-times"></i>
@@ -107,20 +105,11 @@
                 <p class="text-center top--text">Maybe you should consider sleep, or a coffee?</p>
             </div>
         </div>
-
         <div class="bottom--container">
             <div class="bottom">
-                <#--<form action="/beer" method="get" enctype="multipart/form-data">-->
-                <#--&lt;#&ndash;<input type="hidden" id="lat" name="lat" value="" />&ndash;&gt;-->
-                <#--&lt;#&ndash;<input type="hidden" id="long" name="long" value="" />&ndash;&gt;-->
-                    <#--<button class="btn-fab" id="submit">Show me &rarr;</button>-->
-                <#--</form>-->
             </div>
         </div>
     </div>
-
 </div>
-
 </body>
-
 </html>

@@ -95,10 +95,8 @@
     </style>
 </head>
 <body>
-
 <div class="container">
     <div class="row">
-
         <div class="top--container">
             <div class="top">
                 <i class="fa fa-times btn-times"></i>
@@ -108,21 +106,15 @@
                 ${name}<br><br>${address}</p>
             </div>
         </div>
-
         <div class="bottom--container">
             <div class="bottom">
                 <form action="/directions" method="get" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="${id}" />
                     <button class="btn-fab" id="submit">Show me &rarr;</button>
                 </form>
-
             </div>
         </div>
-
     </div>
-
 </div>
-
 </body>
-
 </html>

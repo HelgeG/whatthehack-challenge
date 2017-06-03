@@ -98,7 +98,6 @@
 
 <div class="container">
     <div class="row">
-
         <div class="top--container">
             <div class="top">
                 <i class="fa fa-times btn-times"></i>
@@ -107,7 +106,6 @@
                 <p class="text-center top--text">Take me to a good bar close to here.</p>
             </div>
         </div>
-
         <div class="bottom--container">
             <div class="bottom">
                 <form action="/beer" method="get" enctype="multipart/form-data">
@@ -115,15 +113,10 @@
                     <input type="hidden" id="long" name="long" value="" />
                     <button class="btn-fab" id="submit">Go &rarr;</button>
                 </form>
-
             </div>
         </div>
-
     </div>
-
 </div>
-
-
 <script>
     function initNav() {
         // Try HTML5 geolocation.
@@ -139,5 +132,4 @@
         src="https://maps.googleapis.com/maps/api/js?key=${mapsapikey?js_string}&callback=initNav">
 </script>
 </body>
-
 </html>
