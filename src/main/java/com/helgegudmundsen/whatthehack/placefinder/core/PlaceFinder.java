@@ -1,6 +1,6 @@
 package com.helgegudmundsen.whatthehack.placefinder.core;
 
-import com.helgegudmundsen.whatthehack.placefinder.net.FindPlaces;
+import com.helgegudmundsen.whatthehack.placefinder.net.PickEstablishment;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 
@@ -27,8 +27,7 @@ public class PlaceFinder {
             post("/find", (request, response) -> {
                 Template lookForTemplate;
                 StringWriter writer = new StringWriter();
-                //FindPlaces fp = new FindPlaces();
-                Map<String, Object> map = new FindPlaces().searchGooglePlaces();
+                Map<String, Object> map = new PickEstablishment().searchGooglePlaces();
                 if (map == null) {
                     lookForTemplate = config.getTemplate("no_result.ftl");
                 } else {
