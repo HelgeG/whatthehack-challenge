@@ -10,6 +10,6 @@ public class ConfigTest {
     @Test
     public void readAPIKeyFromPropertiesFile() {
         assertTrue("Key from properties should be AIzaSyBTOEpuX7ISgVz6d6jjJky139FN4NXs6UE",
-                Config.getProperty("api-key").equals("AIzaSyBTOEpuX7ISgVz6d6jjJky139FN4NXs6UE"));
+                Config.getProperty("placesapikey").equals("AIzaSyBTOEpuX7ISgVz6d6jjJky139FN4NXs6UE"));
     }
 }
