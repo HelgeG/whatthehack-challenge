@@ -13,7 +13,7 @@ public class Config {
     private static InputStream input = null;
     static {
         try {
-            input = new FileInputStream("resources/placefinder.properties");
+            input = new FileInputStream("properties/placefinder.properties");
             // load a properties file
             prop.load(input);
         } catch (IOException ex) {
