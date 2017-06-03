@@ -111,9 +111,8 @@
 
         <div class="bottom--container">
             <div class="bottom">
-                <form action="/beer" method="get" enctype="multipart/form-data">
-                    <#--<input type="hidden" id="lat" name="lat" value="" />-->
-                    <#--<input type="hidden" id="long" name="long" value="" />-->
+                <form action="/directions" method="get" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="${id}" />
                     <button class="btn-fab" id="submit">Show me &rarr;</button>
                 </form>
 
@@ -127,16 +126,3 @@
 </body>
 
 </html>
-
-<#--<!DOCTYPE html>-->
-<#--<html lang="en">-->
-<#--<head>-->
-    <#--<meta charset="utf-8">-->
-    <#--<title>Found a nice place for a drink</title>-->
-    <#--<link rel="stylesheet" href="style.css">-->
-    <#--<script src="script.js"></script>-->
-<#--</head>-->
-<#--<body>-->
-<#--<h1>The highest rated open bar in the vicinity is ${name}</h1>-->
-<#--</body>-->
-<#--</html>-->
