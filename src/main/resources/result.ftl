@@ -102,9 +102,9 @@
                 <i class="fa fa-times btn-times"></i>
                 <img src="https://d13yacurqjgara.cloudfront.net/users/220725/screenshots/2364712/funnybeer_1x.jpg" alt="" class="img-responsive" />
                 <h2 class="text-center">I found a nice bar for you</h2>
-                <p class="text-center top--text">The highest rated bar in the vicinity that is open, is:<br><br>
-                ${name}<br><br>${address}</p>
-            </div>
+                <p class="text-center top--text">In the neighborhood, the best rated bar that is open is:<br><h4>
+                &nbsp;&nbsp;&nbsp;${name}</h4><br>${address}</p>
+            </div>&nbsp;
         </div>
         <div class="bottom--container">
             <div class="bottom">
