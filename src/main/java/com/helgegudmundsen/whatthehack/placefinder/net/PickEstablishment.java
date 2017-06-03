@@ -17,7 +17,7 @@ import static org.junit.Assert.assertTrue;
  * Class to search google places for the best fit.
  * Created by helge on 03/06/2017.
  */
-public class FindPlaces {
+public class PickEstablishment {
     public Map<String, Object> searchGooglePlaces()
             throws IOException {
         StringBuilder queryString = getQueryString();
@@ -46,7 +46,7 @@ public class FindPlaces {
             double max_rating = 0.0;
             for (Map<String,Object> establishment : openEstablishments) {
                 String rateString = (String) establishment.get("rating");
-                double rate = (rateString == "") ? 0.0 : Double.parseDouble(rateString);
+                double rate = (rateString.equals("")) ? 0.0 : Double.parseDouble(rateString);
                 if (rate >= max_rating) {
                     max_index = index;
                     max_rating = rate;
@@ -77,10 +77,10 @@ public class FindPlaces {
     private StringBuilder getQueryString() {
         StringBuilder queryString = new StringBuilder();
         queryString.append(Config.getProperty("places-url"));
-        queryString.append("location=" + getLocation());
-        queryString.append("&radius=" + Config.getProperty("radius"));
-        queryString.append("&type=" + Config.getProperty("type"));
-        queryString.append("&key=" + Config.getProperty("api-key"));
+        queryString.append("location=").append(getLocation());
+        queryString.append("&radius=").append(Config.getProperty("radius"));
+        queryString.append("&type=").append(Config.getProperty("type"));
+        queryString.append("&key=").append(Config.getProperty("api-key"));
         return queryString;
     }
 
